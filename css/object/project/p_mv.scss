@@ -1,0 +1,28 @@
+/*===========================================
+Project mvArea
+===========================================*/
+.mvArea {
+    padding: 11rem 0;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    @media screen and (max-width: 768px) {
+        padding: 6rem 1rem 3rem;
+    }
+}
+
+.bg-mv {
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+    .mvTtl img {
+        width: 40%;
+    }
+}

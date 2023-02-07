@@ -1,0 +1,85 @@
+/*===========================================
+Project aboutArea
+===========================================*/
+.aboutWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row-reverse;
+}
+@media screen and (max-width: 768px) {
+  .aboutWrap {
+    display: block;
+  }
+}
+
+.toolBox {
+  max-width: 46rem;
+  width: 100%;
+  padding: 4rem 3rem;
+  background: #e3f6f5;
+  position: relative;
+  right: -2rem;
+  z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  .toolBox {
+    max-width: 100%;
+    margin-top: 1rem;
+    padding: 2rem 1.5rem 4rem;
+    right: -1rem;
+  }
+}
+
+.toolBox_img {
+  margin-bottom: 2.5rem;
+  max-width: 32rem;
+}
+
+.toolBox_ttl {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.toolBox_text {
+  font-size: 1.6rem;
+}
+
+.profileBox {
+  max-width: 46rem;
+  width: 100%;
+  padding: 3rem;
+  background: #ffffff;
+  position: relative;
+  left: -2rem;
+}
+@media screen and (max-width: 768px) {
+  .profileBox {
+    max-width: 100%;
+    padding: 2rem;
+    left: -1rem;
+  }
+}
+
+.profileBox:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  bottom: -0.5rem;
+  right: -0.5rem;
+  background: rgba(186, 232, 232, 0.5);
+  z-index: -1;
+}
+
+.profileBox_ruby {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.profileBox_ttl {
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+  font-weight: bold;
+}

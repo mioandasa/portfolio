@@ -1,0 +1,50 @@
+/*===========================================
+Layout main contents
+===========================================*/
+.secArea {
+    padding: 8rem 0 11rem;
+    @media screen and (max-width: 768px){
+        padding: 4rem 1rem 5rem;
+    }
+}
+
+.secInner {
+    max-width: 110rem;
+    width: 100%;
+    margin: auto;
+    @media screen and (max-width: 768px){
+        
+    }
+}
+
+.secTtl {
+    margin-bottom: 5rem;
+    font-size: 5rem;
+    text-align: center;
+    position: relative;
+    @media screen and (max-width: 768px){
+        margin-bottom: 2rem;
+        font-size: 3rem;
+        text-align: center;
+        position: relative;
+    }
+}
+
+.secTtl .bgTtl {
+    width: 40rem;
+    position: absolute;
+    font-size: 8rem;
+    font-weight: bold;
+    color: rgba(186, 232, 232, 0.3);
+    left: 50%;
+    top: -3.5rem;
+    margin-left: -20rem;
+    z-index: -1;
+    @media screen and (max-width: 768px){
+        width: 100%;
+        font-size: 5rem;
+        top: -2rem;
+        margin-left: 0;
+        left: 0;
+    }
+}

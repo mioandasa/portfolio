@@ -1,0 +1,27 @@
+/*===========================================
+Compornent js-scroll_fadein
+===========================================*/
+.js-scroll_fadein {
+    transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform .3s, opacity .3s, visibility .3s;
+    -webkit-transition: transform .3s, opacity .3s, visibility .3s;
+    -moz-transition: transform .3s, opacity .3s, visibility .3s;
+    -ms-transition: transform .3s, opacity .3s, visibility .3s;
+    -o-transition: transform .3s, opacity .3s, visibility .3s;
+
+    @media screen and (max-width: 768px){
+        opacity: 1;
+        transition:0;
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+
+/* フェードイン時 */
+.js-scroll_fadein.active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}

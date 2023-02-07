@@ -1,0 +1,151 @@
+/*===========================================
+Layout header
+===========================================*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 99999;
+  box-sizing: border-box;
+}
+
+.headerInner {
+  max-width: 110rem;
+  padding: 1rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .headerInner {
+    max-width: none;
+  }
+}
+
+.headerMenu {
+  display: flex;
+  align-items: center;
+}
+
+.headerMenu_item + .headerMenu_item {
+  margin-left: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .headerMenu_item + .headerMenu_item {
+    margin-left: 0rem;
+  }
+}
+
+.headerMenu_item a {
+  display: inline-block;
+  color: inherit;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.8rem;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .headerMenu_item a {
+    padding: 0.5rem;
+    font-size: 1.4rem;
+  }
+}
+
+.headerMenu_item a:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0.2rem;
+  background: #272343;
+  bottom: 0;
+  left: 0;
+  transition: 0.2s all;
+  -webkit-transition: 0.2s all;
+  -moz-transition: 0.2s all;
+  -ms-transition: 0.2s all;
+  -o-transition: 0.2s all;
+}
+
+.headerMenu_item a:hover:before {
+  width: 100%;
+}
+
+.headerLogo_img {
+  width: 13rem;
+}
+@media screen and (max-width: 768px) {
+  .headerLogo_img {
+    width: 8rem;
+  }
+}
+
+/*===========================================
+Layout main contents
+===========================================*/
+.secArea {
+  padding: 8rem 0 11rem;
+}
+@media screen and (max-width: 768px) {
+  .secArea {
+    padding: 4rem 1rem 5rem;
+  }
+}
+
+.secInner {
+  max-width: 110rem;
+  width: 100%;
+  margin: auto;
+}
+.secTtl {
+  margin-bottom: 5rem;
+  font-size: 5rem;
+  text-align: center;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .secTtl {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+  }
+}
+
+.secTtl .bgTtl {
+  width: 40rem;
+  position: absolute;
+  font-size: 8rem;
+  font-weight: bold;
+  color: rgba(186, 232, 232, 0.3);
+  left: 50%;
+  top: -3.5rem;
+  margin-left: -20rem;
+  z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  .secTtl .bgTtl {
+    width: 100%;
+    font-size: 5rem;
+    top: -2rem;
+    margin-left: 0;
+    left: 0;
+  }
+}
+
+/*===========================================
+Layout footer
+===========================================*/
+.footer {
+  padding: 3rem 0;
+  background: #bae8e8;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 1rem 0;
+  }
+}
+.footer .copyright {
+  text-align: center;
+}
